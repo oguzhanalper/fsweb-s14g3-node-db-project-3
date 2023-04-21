@@ -44,7 +44,7 @@ const validateScheme = async (req, res, next) => {
       typeof scheme_name !== "string" ||
       scheme_name.trim() === ""
     ) {
-      res.status(400).json({ message: "Geçersiz scheme_name " });
+      res.status(400).json({ message: "Geçersiz scheme_name" });
     } else {
       next();
     }

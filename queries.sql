@@ -15,6 +15,6 @@
         where o.OrderID=10251
         order by p.ProductName
 -- Her sipariş için OrderId, Müşteri'nin adını(Company Name) ve çalışanın soyadını(employee's LastName). Her sütun başlığı doğru bir şekilde isimlendirilmeli. (16.789 kayıt göstermeli)
-   SELECT o.CustomerID,c.CompanyName,e.LastName FROM Order as o
+   SELECT o.CustomerID,c.CompanyName,e.LastName FROM Order o
         join Customers as c ON o.CustomerID=c.CustomerID
         join Employees as e ON o.EmployeeID=e.EmployeeID;
